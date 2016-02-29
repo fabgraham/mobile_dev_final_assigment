@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>University of Zedland Property Finder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/themes/jquery.mobile.icons.min.css" /> 
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/themes/blue.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/housemap.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="assets/script/housemap.js"></script>
+		<script src="assets/scripts/config.js"></script>
+	</head>
+	<body>
+		
+		<!-- House Search Results -->
+		<div data-role="page" id="houseresults" data-transition="slidefade">
+			<div data-role="header">
+				<a href="houses.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back" 
+				data-transition="pop" data-direction="reverse">Back</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					
+					<!-- For some strange reason the listviews would not work without refreshing the page first. After some research, I found out
+						 I could add data-ajax="false" to refresh the page automatically. It may not be the best solution, but it worked. 
+						 As seen on http://demos.jquerymobile.com/1.4.5/navigation-linking-pages/ -->
+						 
+				    <li><a href="#house1" data-ajax="false"><img src="assets/images/house1-list.jpg"><h2>House 1</h2></a></li>
+	    			<li><a href="#house2" data-ajax="false"><img src="assets/images/house2-list.jpg"><h2>House 2</h2></a></li>
+	    			<li><a href="#house3" data-ajax="false"><img src="assets/images/house3-list.jpg"><h2>House 3</h2></a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+							<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+							<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>
+		
+		<!-- House 1 Page -->
+		<div data-role="page" id="house1">
+			<div data-role="header">
+				<a href="#houseresults" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back" data-transition="pop" data-direction="reverse">Back</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<div class="housesingle">
+					<h2 class="center">House 1</h2>
+					<img class="imgcenter"src="assets/images/house1.jpeg">
+					<div class="housetext">
+						<p>
+						A great house for your Uni years. 
+						</p>
+						<ul>
+							<li>2 Bedrooms</li>
+							<li>Fully Furnished</li>
+							<li>Great Location</li>
+							<li>Includes Bills</li>
+						</ul>
+						<p>
+						78 North End Road<br />
+						London<br />
+						W14 9ES 
+						</p>
+					</div>
+					<a href="map.html" data-ajax="false" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-location">Map</a>
+					<a href="#" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-star">Add to Favourites</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>
+		
+		<!-- House 2 Page -->
+		<div data-role="page" id="house2">
+			<div data-role="header">
+				<a href="#houseresults" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back" data-transition="pop" data-direction="reverse">Back</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<div class="housesingle">
+					<h2 class="center">House 2</h2>
+					<img class="imgcenter"src="assets/images/house2.jpeg">
+					<div class="housetext">
+						<p>
+						A great house for your Uni years. 
+						</p>
+						<ul>
+							<li>3 Bedrooms</li>
+							<li>Fully Furnished</li>
+							<li>Great Location</li>
+							<li>Includes Bills</li>
+						</ul>
+						<p>
+						78 North End Road<br />
+						London<br />
+						W14 9ES 
+						</p>
+					</div>
+					<a href="#" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-location">Map</a>
+					<a href="#" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-star">Add to Favourites</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>
+		
+		<!-- House 3 Page -->
+		<div data-role="page" id="house3">
+			<div data-role="header">
+				<a href="#houseresults" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back" data-transition="pop" data-direction="reverse">Back</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<div class="housesingle">
+					<h2 class="center">House 3</h2>
+					<img class="imgcenter"src="assets/images/house3.jpeg">
+					<div class="housetext">
+						<p>
+						A great house for your Uni years. 
+						</p>
+						<ul>
+							<li>1 Bedroom</li>
+							<li>Fully Furnished</li>
+							<li>Great Location</li>
+							<li>Includes Bills</li>
+						</ul>
+						<p>
+						78 North End Road<br />
+						London<br />
+						W14 9ES 
+						</p>
+					</div>
+					<a href="#" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-location">Map</a>
+					<a href="#" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-icon-left ui-icon-star">Add to Favourites</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

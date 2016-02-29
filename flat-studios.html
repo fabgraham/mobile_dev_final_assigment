@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>University of Zedland Property Finder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/themes/jquery.mobile.icons.min.css" /> 
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/themes/blue.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/housemap.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="assets/scripts/housemap.js"></script>
+		<script src="assets/scripts/config.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="flat_studios">
+			<div data-role="header">
+				<a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" data-transition="pop" data-direction="reverse">Home</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<h2 class="center">Flat Studio Search</h2>
+				<input type="text" name="location" id="location" value="" data-clear-btn="true" placeholder="Enter a location">		
+				<form>
+					<div class="ui-field-contain">
+						<label for="radius_flat" class="select">Radius</label>
+						<select name="radius_flat" id="radius_flat">
+		            		<option value="1">This area only</option>
+					        <option value="2">Within 1/2 mile</option>
+					        <option value="3">Within 1 mile</option>
+					        <option value="4">Within 3 miles</option>
+							<option value="5">Within 5 miles</option>
+						</select>
+					</div>
+				</form>				
+				<br />
+				<form>
+				    <div data-role="rangeslider">
+				        <label for="range-1a">Price - min and max PCM</label>
+				        <input type="range" name="range-1a" id="range-1a" min="0" max="2000" value="600">
+				        <label for="range-1b">Rangeslider:</label>
+				        <input type="range" name="range-1b" id="range-1b" min="0" max="2000" value="1300">
+				    </div>
+				</form>
+				<br />				
+				<a href="#" class="ui-btn ui-corner-all">Search</a>
+			</div>			
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

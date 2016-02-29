@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>University of Zedland Property Finder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/themes/jquery.mobile.icons.min.css" /> 
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/themes/blue.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/housemap.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="assets/scripts/housemap.js"></script>
+		<script src="assets/scripts/config.js"></script>
+	</head>
+	<body>
+		
+		<div data-role="page" id="signup">
+			<div data-role="header">
+				<a href="index.html" data-icon="home" data-transition="pop" data-direction="reverse">Home</a>
+				<h1 class="center">Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<h2 class="center">Sign Up</h2>
+				</form>
+					<div class="ui-field-contain">
+						<label for="user" class="ui-hidden-accessible">User Name:</label>
+						<input type="text" name="user" id="user" placeholder="Username" data-mini="true" required>
+					</div>
+					<div class="ui-field-contain">
+						<label for="pass" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pass" placeholder="Password" data-mini="true" required> 
+					</div>
+					<div class="ui-field-contain">
+						<label for="confpass" class="ui-hidden-accessible">Confirm Password:</label>
+						<input type="password" name="confpass" id="confpass" placeholder="Confirm Password" data-mini="true" required> 
+					</div>
+				</form>
+				<br />
+				<a href="#" class="ui-btn ui-corner-all">Sign Up</a>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li>
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li>  
+					</ul> 
+				</div> 
+			</div>
+		</div>  
+	</body>
+</html>

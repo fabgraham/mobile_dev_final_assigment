@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>University of Zedland Property Finder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/themes/jquery.mobile.icons.min.css" /> 
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/themes/blue.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/housemap.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="assets/scripts/housemap.js"></script>
+		<script src="assets/scripts/config.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="contact_us">
+			
+			<!-- Log in Form -->
+			<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" id="login">
+				<form class="userform">
+					<h2>Login</h2>
+     				<label for="email_login">Email</label>
+					<input type="text" name="email_login" id="email_login" value="">
+					<label for="password_login">Password</label>
+					<input type="password" name="password_login" id="password_login" value="" autocomplete="off">					
+					<br />
+					<a href="#" class="ui-btn ui-corner-all">Login</a>
+					<a href="#">Forgot your password?</a>
+					<br />
+					<br />
+					<a href="sign-up.html" class="ui-btn ui-btn-b ui-corner-all">Sign Up</a>
+             	</form>
+			</div>
+			
+			<div data-role="header">
+				<a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" data-transition="pop" data-direction="reverse">Home</a>
+				<h1>Zedland Uni</h1>
+			</div>
+			<div data-role="content">
+				<h2 class="center">Contact Us</h2>
+				<a href="tel:+7941125555" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all">Phone</a>
+				<a href="sms://+7941125555" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all">Text</a>
+				<a href="mailto:accommodationm@zedland.ac.uk" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all"> Email</a>
+				<p class="bold">Postal Address:</p>
+				<p>
+				16 Zedland High Street<br>
+				Capital City<br>
+				Zedland<br>
+				ZL7867H
+				</p>
+			</div>
+			<div data-role="footer" data-position="fixed"> 
+				<div data-role="navbar"> 
+					<ul>
+						<li><a href="about-us.html" data-prefech class="about" data-icon="info" data-transition="slideup">About Us</a></li> 
+						<li><a href="contact-us.html" data-prefech data-icon="mail" data-transition="slideup">Contact Us</a></li> 
+						<li><a href="login.html" data-prefech data-icon="user" data-transition="slideup">Log In</a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
